@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>月租房源</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/other.css?a=20180627">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+<body>
+<div class="header">
+    <img class="hLogin" src="img/hLogin.png" alt="源涞月租房">
+    <ul class="hNav">
+        <li><a href="index.html">首 页</a></li>
+        <li><a class="navActive" href="houseLists.html" target="_blank">服务公寓</a></li>
+        <li><a href="hotelList.html" target="_blank">酒店公寓</a></li>
+        <li><a href="houseEntrust.html" target="_blank">房源委托</a></li>
+    </ul>
+    <div class="hPhone">400-668-5881</div>
+    <i class="hpIco"></i>
+</div>
+<!-- 中间内容开始 -->
+<div class="hdSite"><label> 首页</label><label class="fwgy"><b>></b>服务公寓</label> <span class="disHide">><label class="areaIco"><!--浦东--></label><b>><label class="plateIco"><!--张江--></label></b></span></div>
+<div class="hlSearch">
+    <dl class="areaModule">
+        <!--<dt>
+            <span>区域</span>
+        </dt>
+        <dd>
+            <span>不限</span>
+        </dd>
+        -->
+    </dl>
+    <dl class="houseModule">
+        <!--<dt><span>户型</span></dt>-->
+        <!--<dd><span>不限</span></dd>-->
+    </dl>
+    <dl class="priceModule">
+        <dt><span>价格</span></dt>
+        <dd><span class="aa bgecc242" max="" min="">不限</span></dd>
+        <dd><span max="10000" min="">10000以下</span></dd>
+        <dd><span max="20000" min="10000">10000-20000</span></dd>
+        <dd><span max="30000" min="20000">20000-30000</span></dd>
+        <dd><span max="" min="30000">30000以上</span></dd>
+        <dd><input type="number" class="minInput numberTxt" value=""><b>—</b><input type="number" class="maxInput numberTxt" value=""><input type="button" class="sureBtn" value="确定"></dd>
+    </dl>
+    <ul class="screenModule disHide">
+        <li><span>筛选条件</span></li>
+        <li class="sArea disHide"><label></label><i></i></li>
+        <li class="sType disHide"><label></label><i></i></li>
+        <li class="sPrice disHide"><label></label><i></i></li>
+        <li><b></b></li>
+    </ul>
+</div>
+<div class="houseList">
+    <div class="hlLeft" id="apartmentListInfo">
+        <div class="hasMes">
+            <dl class="sThree">
+                <dt>默认排序</dt>
+                <dd><span>价格</span><i class="downBtn"></i></dd>
+                <dd><span>面积</span><i class="downBtn"></i></dd>
+            </dl>
+            <ul class="hlModule" id="listInfo">
+                <!--<div class="pitera disHide">
+                    <i></i>
+                    <span>您搜索的条件暂无结果哦，再试试别的条件吧</span>
+                </div>-->
+
+                <!--<li>
+                    <a href="#">
+                        <div class="hlImg">
+                            <img src="img/houseList.png" alt="">
+                            <div class="housePrice"><span>¥29900</span><label>/月</label></div>
+                        </div>
+                        <div class="houseMes">
+                            <span class="hmName">浦东  世纪大道  陆家嘴中央公寓三居室   </span>
+                            <p class="hsDetail"><i class="hareaIco"></i><span class="hsMes"><label>3室2厅2卫 </label><b>|</b><label>180平米 </label><b>|</b><label> 17/28层 </label></span></p>
+                            <p class="hsDetail"><i class="hplaceIco"></i><label class="hsMes">距离地铁2号线 世纪大道站 500m</label></p>
+                        </div>
+                    </a>
+                </li>-->
+                <!--<li>
+                    <a href="#">
+                        <div class="hlImg">
+                            <img src="img/houseList.png" alt="">
+                            <div class="housePrice"><span>¥29900</span><label>/月</label></div>
+                        </div>
+                        <div class="houseMes">
+                            <span class="hmName">浦东  世纪大道  陆家嘴中央公寓三居室   </span>
+                            <p class="hsDetail"><i class="hareaIco"></i><span class="hsMes"><label>3室2厅2卫 </label><b>|</b><label>180平米 </label><b>|</b><label> 17/28层 </label></span></p>
+                            <p class="hsDetail"><i class="hplaceIco"></i><label class="hsMes">距离地铁2号线 世纪大道站 500m</label></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="hlImg">
+                            <img src="img/houseList.png" alt="">
+                            <div class="housePrice"><span>¥29900</span><label>/月</label></div>
+                        </div>
+                        <div class="houseMes">
+                            <span class="hmName">浦东  世纪大道  陆家嘴中央公寓三居室   </span>
+                            <p class="hsDetail"><i class="hareaIco"></i><span class="hsMes"><label>3室2厅2卫 </label><b>|</b><label>180平米 </label><b>|</b><label> 17/28层 </label></span></p>
+                            <p class="hsDetail"><i class="hplaceIco"></i><label class="hsMes">距离地铁2号线 世纪大道站 500m</label></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="hlImg">
+                            <img src="img/houseList.png" alt="">
+                            <div class="housePrice"><span>¥29900</span><label>/月</label></div>
+                        </div>
+                        <div class="houseMes">
+                            <span class="hmName">浦东  世纪大道  陆家嘴中央公寓三居室   </span>
+                            <p class="hsDetail"><i class="hareaIco"></i><span class="hsMes"><label>3室2厅2卫 </label><b>|</b><label>180平米 </label><b>|</b><label> 17/28层 </label></span></p>
+                            <p class="hsDetail"><i class="hplaceIco"></i><label class="hsMes">距离地铁2号线 世纪大道站 500m</label></p>
+                        </div>
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+        <div class="noMes disHide">
+            <div class="pitera">
+                <i></i>
+                <span>您搜索的条件暂无结果哦，再试试别的条件吧</span>
+            </div>
+        </div>
+    </div>
+    <div class="hlRight scorrType">
+      <div id="allmap"></div>
+    </div>
+    <!--分页开始-->
+    <div class="pageModule">
+        <ul class="pagination" id="pagination">
+        </ul>
+        <input type="hidden" id="PageCount" runat="server" />
+        <!--设置每页多少个 -->
+        <input type="hidden" id="PageSize" runat="server" value="16" />
+        <input type="hidden" id="countindex" runat="server" value="10"/>
+        <!--设置最多显示的页码数 可以手动设置 默认为5-->
+        <input type="hidden" id="visiblePages" runat="server" value="5" />
+    </div>
+    <!--分页结束-->
+</div>
+
+
+
+<!-- 中间内容结束 -->
+<div class="exchange">
+    <i class="indexPhone"></i>
+    <div class="phoneMes">
+        <span>400-668-5881</span>
+        <span>客服热线   每天9:00-21:00</span>
+    </div>
+    <i class="indexWechat"></i>
+    <div class="wechatPop">
+        <div>关注“源涞月租房”服务号 </div>
+        <img src="img/ewmPop.png" alt="源涞月租房">
+        <ul>
+            <li><i></i><span>查房源</span></li>
+            <li><i></i><span>预订服务</span></li>
+            <li><i></i><span>更多优惠</span></li>
+        </ul>
+    </div>
+    <i class="indexEmail"></i>
+    <div class="emailMes">
+        <span>yl@yoland.com</span>
+        <span>发送客服邮件，开始深度咨询</span>
+    </div>
+    <i class="indexTop"></i>
+</div>
+<!--<div class="footer mart0">
+    <div class="fCenter">
+        <div class="ftTop">
+            <div class="ftLeft">
+                <dl>
+                    <dd><a href="aboutMe.html">关于源涞</a></dd>
+                    <dt>/</dt>
+                    <dd><a href="teamIndex.html">源涞团队</a></dd>
+                </dl>
+                <div class="fDetail">
+                    <p>公寓设计风格独具匠心，将高贵与简约完美融合。提供个性化服务，更贴合客户多样化需求</p>
+                    <p>短租（1-6个月）、长租（6个月以上）灵活搭配，让客户的居家与商旅全程无忧</p>
+                    <p>上海CBD及热门景点多样优质房源，为客户提供交通便捷，舒适的居住环境。在线看房、预定房源、在线支付及预约服务等一键完成</p>
+                    <p class="pStyle">全球订房热线：（周一至周日9:00-17:30）</p>
+                    <label>400 - 668 - 5881</label>
+                </div>
+            </div>
+            <img class="footerEwm" src="img/footerEwm.png">
+        </div>
+        <div class="ftBottom">
+            <div class="fbLeft">
+                <p>热门楼盘小区： 林荫湖畔    世纪花园    莱诗邸    汇金广场    仁恒河滨花园</p>
+                <p>瑞仕花园    翠湖天地    香梅花园    御景园    城宁花苑</p>
+            </div>
+            <div class="fbRight">
+                <p>© Copyright 2013 -2016 www.ylrent.com All Rights Reserved. 源涞国际</p>
+                <p>IPC备案：沪ICP13031446</p>
+            </div>
+        </div>
+    </div>
+</div>-->
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/index.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jqPaginator.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wQZWbLQbKI22QsrKDjnCh5ZGkieqeuVd"></script>
+<script>
+    //地图开始
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var defualIcon = new BMap.Icon("img/currentIco.png", new BMap.Size(30,37));
+    var clickIcon = new BMap.Icon("img/actPoint.png", new BMap.Size(30,37));
+    map.centerAndZoom("上海", 13);
+    // map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+    //添加缩小放大控件
+    var top_left_control = new BMap.ScaleControl({anchor:BMAP_ANCHOR_TOP_LEFT}); //左上角，添加比例尺
+    var top_left_navigation = new BMap.NavigationControl(); //左上角,添加默认缩放平移控件
+    // var top_right_navigation = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_RIGHT,
+    // type:BMAP_NAVIGATION_CONTROL_SMALL
+    // }); //右上角，仅包含和平移和缩放按钮
+    //添加控件和比例尺
+    map.addControl(top_left_control);
+    map.addControl(top_left_navigation);
+    // map.addControl(top_right_navigation);
+
+    // 编写自定义函数,创建标注
+    function addMarker(point,infoWindow,name){
+        var marker = new BMap.Marker(point,{icon:defualIcon});
+        map.addOverlay(marker);
+        //点击图标触发
+        marker.addEventListener("click", function(){
+
+            /*map.centerAndZoom(point, 13);*/
+            //点击图标更换
+            this.setIcon(clickIcon);
+            //点击图标显示房屋信息
+            this.openInfoWindow(infoWindow);
+            //图片加载完毕重绘infowindow
+            $('.BMap_pop>img').hide();
+        });
+        marker.addEventListener("infowindowclose",function(){
+            this.setIcon(defualIcon);
+        });
+        //鼠标浮在对应房源上该房源图标更换
+        $("[name='"+name+"']").mouseover(function(){
+            //map.centerAndZoom(point, 13);
+            map.centerAndZoom(point,map.getZoom());
+            //点击图标更换
+            marker.setIcon(clickIcon);
+        });
+
+        //鼠标离开对应房源上该房源图标更换为默认
+        $("[name='"+name+"']").mouseout(function(){
+            marker.setIcon(defualIcon);
+        });
+    }
+    //清除覆盖物
+    function remove_overlay(){
+        map.clearOverlays();
+    }
+    //地图结束
+    //分页开始
+    function loadData(num) {
+        $("#PageCount").val(totalResult);
+    }
+    //分页结束
+    $(function(){
+
+        /*埋点开始*/
+        var eventnumberData="10301"
+        function GetQueryString(name) { //获取渠道
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r!=null) return (decodeURIComponent(r[2])); return null;
+        }
+        var channelnameData=GetQueryString("channelname") //渠道号
+        console.log("aaa",channelnameData)
+        if(!(channelnameData)){
+            console.log("无渠道号")
+            channelnameData= localStorage.getItem("channelnameLos");
+        }else{
+            console.log("有渠道号")
+            localStorage.setItem("channelnameLos",channelnameData);
+        }
+        console.log("bb",channelnameData)
+        //页面来源
+        var sourcepageData=document.referrer
+        console.log("页面来源",sourcepageData)
+        //房源id
+        var houseidData="";
+        /*设备*/
+        var machinetypeData="pc"
+        console.log("设备",machinetypeData)
+        //来源
+        var sourceData="website_source_1"
+        console.log("来源",sourceData)
+        //唯一标识
+        var customeridData=localStorage.getItem("customeridLos")
+        if(!(customeridData)){
+            customeridData="";
+        }else{
+            customeridData=localStorage.getItem("customeridLos")
+        }
+        buriedPoint(eventnumberData,channelnameData,sourcepageData,houseidData,machinetypeData,sourceData,customeridData);
+        /*埋点结束*/
+
+
+
+     //地区接口开始
+        var oneMes='';
+        var oneList='';
+        var _houseLi='';
+        $.ajax({
+            //url:httpHead+"/indexpc/indexCityRP",
+            url:testHttp+"/indexpc/indexCityRP",
+            type:"GET",
+            success:function(data){ //对数据data处理，输出到html页面
+                if(data.code ==='000000'){
+                    var _data=data.data.cityRP[0].region;
+                    for(var r=0;r<_data.length;r++){
+                        var _datas=data.data.cityRP[0].region[r].plate;
+                        var twoMes='';
+                        for(var t=0;t<_datas.length;t++){
+                            twoMes+='<li areaid="'+_datas[t].id+'">'+_datas[t].name+'</li>'
+                        }
+                        oneMes+='<dd><span id="'+_data[r].id+'">'+_data[r].name+'</span><ul><li>不限</li>'+twoMes+'</ul></dd>' //_data[r].name
+                    }
+                    oneList='<dt><span>区域</span></dt><dd class="hoverNo"><span id="000000">不限</span></dd>'+oneMes+'';
+                    $(".areaModule").html(oneList);
+                    if(samllNav && samllNav.areaMes){
+                        var syArea=samllNav.areaMes;
+                        var areaId=samllNav.areaname;
+                        if($("#"+areaId).text()==syArea){
+                            $("#"+areaId).addClass("bgecc242");
+                            $("#"+areaId).siblings("ul").children("li:nth-child(1)").addClass("bgecc242")
+                        }
+                    }else{
+                        $(".hoverNo span").addClass("bgecc242");
+                    }
+                }
+            }
+        });
+        //户型接口开始
+        $.ajax({
+            //url:httpHead+"/indexpc/indexHouseType",
+            url:testHttp+"/indexpc/indexHouseType",
+            type:"GET",
+            success:function(data){ //对数据data处理，输出到html页面
+                if(data.code ==='000000'){
+                    var _houseData=data.data.houseType;
+                    var _houseLength=data.data.houseType.length;
+                    for (var h=0;h<_houseLength;h++){
+                        _houseLi+="<dd><span id="+_houseData[h].typeBianma+" >"+_houseData[h].typeName+"</span></dd>"
+                    }
+                    var houseHtml="<dt><span>户型</span></dt><dd><span class='bx' id='000001'>不限</span></dd>"+_houseLi+"";
+                    $('.houseModule').html(houseHtml);
+                    if(samllNav && samllNav.plateMes){
+                        var syPate=samllNav.plateMes;
+                        var ptId=samllNav.hyNname;
+                        ptId=ptId.replace(/,/g,"\\,");
+                        var aa=$("#"+ptId).text();
+                        if($("#"+ptId).text()==syPate){
+                            $("#"+ptId).addClass("bgecc242")
+                        }
+                    }else{
+                        $(".bx").addClass("bgecc242")
+                    }
+                }
+            }
+        });
+        //筛选开始
+        //首页进来时
+        var samllNav = JSON.parse(localStorage.getItem('key'));
+        /*debugger;*/
+        console.log(samllNav);
+         if((samllNav) && ((samllNav.plateMes)=='') && ((samllNav.plateMes)=='')){
+           $(".hdSite span").addClass("disHide");
+         }
+        if(!(samllNav)){
+            $(".hdSite span").addClass("disHide");
+            $(".hoverNo span").addClass(".bgecc242")
+        }else if((samllNav) && (samllNav.areaMes) && (samllNav.areaMes)!="不限"){
+
+            $(".fwgy").addClass("disHide");
+            $(".hdSite span").removeClass("disHide");
+            $(".hdSite span b").addClass("disHide");
+            $(".areaIco").html(samllNav.areaMes);
+            $(".screenModule").removeClass("disHide");
+            $(".sArea").removeClass("disHide");
+            $(".sArea i").removeClass("disHide");
+            $(".sArea label").html(samllNav.areaMes)
+        }
+        if((samllNav) && (samllNav.plateMes)&& (samllNav.plateMes)!="不限"){
+            $(".screenModule").removeClass("disHide");
+            $(".sType").removeClass("disHide");
+            $(".sType i").removeClass("disHide");
+            $(".sType label").html(samllNav.plateMes);
+            $(".hdSite span").addClass("disHide")
+        }
+        if((samllNav) && (samllNav.plateMes)=="不限" && (samllNav.plateMes)=="不限"){
+            $(".hdSite span").addClass("disHide");
+            $(".hoverNo span").addClass(".bgecc242");
+        }
+        /*debugger;*/
+        if((samllNav) && (samllNav.plateMes)=="不限" && (samllNav.areaMes)!="不限"){
+            $(".hdSite span").removeClass("disHide");
+            $(".areaIco").html(samllNav.areaMes);
+        }
+        if((samllNav) && (samllNav.areaMes) =="不限"){
+            $(".hdSite span").addClass("disHide")
+        }
+        if((samllNav) && (samllNav.plateMes) =="不限"){
+            $(".hdSite span").addClass("disHide")
+        }
+        if((samllNav) &&(samllNav.plateMes) && (samllNav.plateMes) !="不限"){
+            $(".hdSite span").addClass("disHide")
+        }
+
+        if((samllNav) &&(samllNav.plateMes) && (samllNav.plateMes)!="不限" &&(samllNav.areaMes) && (samllNav.areaMes)!="不限"){
+            $(".hdSite span").removeClass("disHide");
+            $(".areaIco").html(samllNav.areaMes);
+        }
+
+
+        $(".areaModule").delegate("dd span","click",function(){
+
+            $(".areaModule dd span").removeClass("bgecc242");
+            $(".areaModule li").removeClass("bgecc242");
+            $(this).addClass("bgecc242");
+            if($(this).html() !="不限"){
+                $(".sArea i").removeClass("disHide");
+                $(".fwgy").addClass("disHide");
+                $(this).siblings("ul").children("li:nth-child(1)").addClass("bgecc242");
+                $(".fwgy").addClass("disHide");
+                $(".hdSite span").removeClass("disHide");
+                $(".areaIco").html($(this).html());
+                $(".screenModule").removeClass("disHide");
+                $(".sArea label").html($(this).html());
+                $(".sArea").removeClass("disHide");
+                $(".hdSite span b").addClass("disHide")
+            }else if($(this).html() =="不限" && !($(".sType label").html()) && !($(".sPrice label").html())){
+                $(".fwgy").removeClass("disHide");
+                $(".hdSite span").addClass("disHide");
+                $(".areaIco").html("");
+                $(".sArea").addClass("disHide");
+                $(".sArea label").html('');
+                $(".screenModule").addClass("disHide")
+            }else if($(this).html() =='不限' || ($(".sType label").html()) || ($(".sPrice label").html())){
+                $(".sArea").addClass("disHide");
+                $(".sArea label").html('');
+            }
+            plateId="";
+            areaData=$(".areaModule dd").children(".bgecc242").attr("id");
+
+//            window.location="houseLists.html?q"+areaData;
+//            $(".areaModule dd").children(" ").addClass("bgecc242");
+//
+//            alert(areaData)
+            numInfo(1);
+            apartmentListInfo();
+            loadData(page);
+            loadpage();
+        });
+
+        $('.areaModule').delegate('dd','mousemove',function(){
+            $(this).children('ul').show();
+        });
+        $('.areaModule').delegate('dd','mouseleave',function(){
+            $(this).children('ul').hide();
+        });
+
+        $('.areaModule').delegate('li','click',function(){
+            var clickArea=$(this).html();
+            var clickHtml="";
+            $(".hdSite span").removeClass("disHide");//.show();
+            if(clickArea==="不限"){
+                clickHtml=$(this).parent("ul").siblings("span").html();
+                $(".sArea label").html(clickHtml);
+                $(".areaIco").html(clickHtml);
+                $(".hdSite span b").addClass("disHide");
+                $(".fwgy").addClass("disHide")
+            }else{
+                clickHtml=$(this).html();
+                $(".sArea label").html(clickHtml);
+                var plateHtml=$(this).parent("ul").siblings("span").html();
+                $(".areaModule li").removeClass("bgecc242");
+               // $(".areaModule li:first-child").addClass("bgecc242")
+
+                $(".areaIco").html(plateHtml);
+                $(".plateIco").html(clickHtml);
+                $(".hdSite span").removeClass("disHide");
+                $(".hdSite span b").removeClass("disHide");
+                $(".fwgy").addClass("disHide");
+                $(".sArea i").removeClass("disHide")
+            }
+            $(this).siblings("li").removeClass('bgecc242');
+            $(this).addClass('bgecc242');
+            $(".areaModule dd span").removeClass('bgecc242');
+            $(this).parent('ul').siblings("span").addClass("bgecc242");
+            $(this).parent('ul').show();
+            $(".screenModule").removeClass("disHide");
+            $(".sArea i").removeClass("disHide");
+            $('.sArea').removeClass("disHide");
+            plateId=$(this).eq(0).attr("areaid");
+            areaData=$(this).parent("ul").siblings("span").eq(0).attr("id");
+            numInfo(1);
+            apartmentListInfo();
+            loadData(page);
+            loadpage();
+        });
+
+        $(".houseModule").delegate("dd","click",function(){
+            var aa=$(this).children("span").html();
+            if($(this).children("span").html()!="不限"){
+                $(".screenModule").removeClass("disHide");
+                $('.sType').removeClass("disHide");
+                $(".sType label").html($(this).children("span").html());
+                $(".sType i").removeClass("disHide")
+            }else if($(this).children("span").html() =='不限' && !($(".sArea label").html()) && !($(".sPrice label").html())){
+                $(".sType label").html('');
+                $(".sType i").addClass("disHide");
+                $(".screenModule").addClass("disHide");
+            }else if(($(this).children("span").html() =='不限' && ($(".sArea label").html()) && ($(".sArea label").html() !="不限"))){
+                $(".sType").addClass("disHide");
+                $(".sType label").html('');
+                $(".sType i").addClass("disHide")
+            }else if(($(this).children("span").html()=='不限' && ($(".sPrice label").html()) && $(".sPrice label").html()!="不限")){
+                $(".sType").addClass("disHide");
+                $(".sType label").html('');
+                $(".sType i").addClass("disHide")
+            }else if(($(this).children("span").html() =='不限' && ($(".sArea label").html() =='') && ($(".sArea label").html() ==""))){
+                $(".screenModule").addClass("disHide");
+                $(".sType label").html('');
+                $(".sType i").addClass("disHide")
+            }
+            $(".houseModule dd span").removeClass("bgecc242");
+            $(this).children("span").addClass("bgecc242");
+            htypeData=$(this).children("span").eq(0).attr("id");
+            numInfo(1);
+            apartmentListInfo();
+            loadData(page);
+            loadpage();
+        });
+
+        $(".priceModule").delegate("dd span","click",function(){
+            if($(this).html()!="不限"){
+                $(".screenModule").removeClass("disHide");
+                $('.sPrice').removeClass("disHide");
+                $(".sPrice label").html($(this).html());
+                $(".sPrice i").removeClass("disHide");
+            }else if($(this).html() =='不限' && !($(".sArea label").html()) && !($(".sType label").html())){
+                $(".sPrice label").html('');
+                $(".sPrice i").addClass("disHide");
+                $(".screenModule").addClass("disHide");
+            }else if(($(this).html() =='不限' && ($(".sArea label").html()) && ($(".sArea label").html() !='不限'))){
+                $(".sPrice").addClass("disHide");
+                $(".sPrice label").html('');
+                $(".sPrice i").addClass("disHide")
+            }else if(($(this).html() && ($(".sType label").html()) && ($(".sType label").html() !='不限'))){
+                $(".sPrice").addClass("disHide");
+                $(".sPrice label").html('');
+                $(".sPrice i").addClass("disHide")
+            }else if(($(".sArea label").html() =='') && ($(".sType label").html() =='') && ($(this).html()=="") ){
+                $(".screenModule").addClass("disHide");
+            }else if(($(this).html()=='不限') && ($(".sType label").html()) && ($(".sArea label").html()) ){
+                $(".sPrice label").html('');
+                $(".sPrice i").addClass("disHide");
+                $(".screenModule").addClass("disHide");
+            }
+            $(".sureBtn").hide();
+            $(".priceModule dd span").removeClass("bgecc242");
+            $(".priceModule dd .minInput").val("");
+            $(".priceModule dd .maxInput").val("");
+            $(this).addClass("bgecc242");
+            maxData=$(this).eq(0).attr("max");
+            minData=$(this).eq(0).attr("min");
+            numInfo(1);
+            apartmentListInfo();
+            loadData(page);
+            loadpage();
+        });
+
+        $(".priceModule").delegate(".numberTxt","keyup",function(){
+            var _minData=$(".minInput").val();
+            var _maxData=$(".maxInput").val();
+            if((_minData) || (_maxData)){
+                $(".sureBtn").show();
+                $(".priceModule dd span").removeClass("bgecc242");
+            }else{
+                $(".sureBtn").hide();
+                $(".priceModule dd:nth-child(2)").children("span").addClass("bgecc242");
+            }
+        });
+
+        $(".sureBtn").on("click",function(){
+            maxData =$(".maxInput").val();
+            minData=$(".minInput").val();
+            $(".priceModule dd span").removeClass("bgecc242");
+            $(".screenModule").removeClass("disHide");
+            $(".sPrice").removeClass("disHide");
+            if(!(maxData) && minData){
+                var inputPrice=minData+"以上";
+                $(".sPrice label").html(inputPrice)
+            }else if(!(minData) && maxData){
+                var inputPrice=maxData+"以下";
+                $(".sPrice label").html(inputPrice)
+            }else if(minData && maxData ){
+                var inputPrice=minData+"-"+maxData;
+                $(".sPrice label").html(inputPrice)
+            }
+            numInfo(1);
+            apartmentListInfo();
+        });
+
+        $(".sArea i").on("click",function(){
+            $(".sArea label").html()=="";
+            areaData='';
+            plateId='';
+            $(".areaModule dd span").removeClass('bgecc242');
+            $(".areaModule li").removeClass("bgecc242");
+            $(this).parent("li").addClass("disHide");
+            $(this).siblings("label").html("");
+            $(".hdSite span").addClass("disHide");
+            $(".areaIco").html("");
+            $(".plateIco").html("");
+            if($(".sType label").html()==""){
+                if($(".sPrice label").html()==""){
+                    $(".screenModule").addClass("disHide")
+                }
+            }
+            $(".areaModule dd:nth-child(2)").children("span").addClass("bgecc242");
+            $(".fwgy").removeClass("disHide");
+            apartmentListInfo();
+            loadData(1);
+            loadpage();
+        });
+
+        $(".sType i").on("click",function(){
+            $(".sType label").html()=="";
+            htypeData="";
+            $(".houseModule span").removeClass("bgecc242");
+            $(this).parent("li").addClass("disHide");
+            $(this).siblings("label").html("");
+            if($(".sArea label").html()==""){
+                if($(".sPrice label").html()==""){
+                    $(".screenModule").addClass("disHide")
+                }
+            }
+            $(".houseModule dd:nth-child(2)").children("span").addClass("bgecc242");
+            apartmentListInfo();
+            loadData(1);
+            loadpage();
+        });
+
+        $(".sPrice i").on("click",function(){
+            $(".sPrice label").html()=="";
+            maxData='';
+            minData='';
+            $(".priceModule span").removeClass("bgecc242");
+            $(this).parent("li").addClass("disHide");
+            $(this).siblings("label").html("");
+            if($(".sArea label").html()==""){
+                if($(".sType label").html()==""){
+                    $(".screenModule").addClass("disHide")
+                }
+            }
+            $(".priceModule dd:nth-child(2)").children("span").addClass("bgecc242");
+            apartmentListInfo();
+            loadData(1);
+            loadpage();
+        });
+
+        $(".screenModule li b").on("click",function(){
+            $(".fwgy").removeClass("disHide");
+            $(".areaIco").html('');
+            $(".areaModule dd span").removeClass("bgecc242");
+            $(".areaModule li").removeClass("bgecc242");
+            $(".houseModule dd span").removeClass("bgecc242");
+            $(".priceModule dd span").removeClass("bgecc242");
+            $(".screenModule").addClass("disHide");
+            $(".screenModule li label").html('');
+            $(".screenModule li i").addClass("disHide");
+            $(".hdSite span").addClass("disHide");
+            $(".hoverNo span").addClass("bgecc242");
+            $(".bx").addClass("bgecc242");
+            $(".aa").addClass("bgecc242");
+            areaData='';
+            plateId='';
+            htypeData='';
+            maxData='';
+            minData='';
+            apartmentListInfo();
+            loadData(1);
+            loadpage();
+        });
+
+        $(".sThree dt").on("click",function(){
+            sortData='';
+            ascData='';
+            numInfo(1);
+            apartmentListInfo();
+            $(".sThree dd i").addClass("downBtn").removeClass("upBtn")
+        });
+
+        $(".sThree dd").on("click",function(){
+            if($(this).children("span").html()=="价格"){
+                if($(this).children("i").eq(0).attr("class")=="downBtn"){
+                    $(this).children("i").addClass("upBtn").removeClass("downBtn");
+                    sortData="price";
+                    ascData="asc";
+                }else{
+                    $(this).children("i").addClass("downBtn").removeClass("upBtn");
+                    sortData="price";
+                    ascData="desc";
+                }
+            }else if($(this).children("span").html()=="面积"){
+                if($(this).children("i").eq(0).attr("class")=="downBtn"){
+                    $(this).children("i").addClass("upBtn").removeClass("downBtn");
+                    sortData="builtarea";
+                    ascData="asc";
+                }else{
+                    $(this).children("i").addClass("downBtn").removeClass("upBtn");
+                    sortData="builtarea";
+                    ascData="desc";
+                }
+            }
+            numInfo(1);
+            apartmentListInfo();
+        });
+        //筛选结束
+
+        //默认总数量
+        totalResult = "1";
+        //默认当前页
+        page = 1 ;
+        var url= window.location.search;
+
+        function GetQueryString(name) { //获取渠道
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r!=null) return (decodeURIComponent(r[2])); return null;
+        }
+        var areanameData=GetQueryString("areaname") //区域
+        console.log("aaa",areanameData)
+        if(!(areanameData)){
+            console.log("无渠道号")
+            //reanameData= localStorage.getItem("channelnameLos");
+        }else{
+            areaData=areanameData
+        }
+        var hyNnameData=GetQueryString("hyNname") //区域
+        console.log("aaa",hyNnameData)
+        if(!(hyNnameData)){
+            console.log("无渠道号")
+            //reanameData= localStorage.getItem("channelnameLos");
+        }else{
+            htypeData=hyNnameData
+        }
+
+//        var urlList=url.split('?');
+//        for(var i=0;i<urlList.length;i++){
+//            var params = urlList[i].split('=');
+//            if(i==1){
+//                areaData=params[1]
+//            }else if(i==2){
+//                htypeData=params[1]
+//            }
+//        }
+        apartmentListInfo();
+        loadData(page);
+        loadpage();
+    })
+</script>
+</body>
+</html>

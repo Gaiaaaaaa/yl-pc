@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>酒店式公寓</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/other.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<body>
+<div class="header">
+    <img class="hLogin" src="img/hLogin.png">
+    <ul class="hNav">
+        <li><a href="index.html">首 页</a></li>
+        <li><a href="houseLists.html" target="_blank">服务公寓</a></li>
+        <li><a class="navActive" href="hotelList.html" target="_blank">酒店公寓</a></li>
+        <li><a href="houseEntrust.html" target="_blank">房源委托</a></li>
+    </ul>
+    <div class="mouseEwm">
+     <span class="hEwm">
+     <img src="img/ewmIco.png">
+    </span>
+        <div class="ewmPop">
+            <div>关注“源涞月租房”服务号 </div>
+            <img src="img/ewmPop.png">
+            <ul>
+                <li><i></i><span>查房源</span></li>
+                <li><i></i><span>预订服务</span></li>
+                <li><i></i><span>更多优惠</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mouseLang">
+       <!-- <span class="hLanguage"><label>language</label><i></i></span>-->
+        <!--<div class="languePop">
+            <ul>
+                <li class="labgActive">简体中文</li>
+                <li>English</li>
+            </ul>
+        </div>-->
+    </div>
+</div>
+<!-- 中间内容开始 -->
+<div class="mask disHide"></div>
+<div class="orderPop disHide">
+    <i class="closeIcos"></i>
+    <div class="orderName">预约看房</div>
+    <div class="orderList">
+        <dl class="orderMes">
+            <dd><input type="text" class="phoneTxt" value="" placeholder="手机号"></dd>
+            <dt>
+                <span class="verification">
+                <input class="validCodeTxt" type="text" value="" placeholder="图形验证码">
+                <img id="imgObj" class="validCodeImg" alt="图形验证码" src="" onclick="changeImg()"/>
+                <!-- <a href="javascript:void(null);" onclick="changeImg()">换一张</a> -->
+                </span>
+            </dt>
+            <dt><input type="text" class="codeTxt" value="" placeholder="验证码">
+                <input type="button" id="btnSendCode" class="clickCode obtain generate_code" value="发送验证码"></dt>
+            <dt>
+                <input type="text" class="nameTxt" value="" placeholder="您的姓名">
+                <span><i class="clickSex radioIcos"></i>
+                <label>先生</label></span>
+                <span><i class="clickSex"></i><label>女士</label></span>
+            </dt>
+        </dl>
+        <div class="codeHint"><i></i><span>请输入手机号码</span></div>
+        <a class="subBtn">提交</a>
+    </div>
+    <div class="subMes">
+        <i></i>
+        <span>您的预约已提交成功</span>
+        <span>我们会尽快安排您看房</span>
+    </div>
+</div>
+<div class="jhBanner">
+    <div class="jhBcenter">
+        <div class="jhbMes">
+            <div>上海•嘉汇源涞国际酒店公寓</div>
+            <ul>
+                <li><i class="jhbOne"></i><span>距地铁1号线、4号线仅5分钟路程</span></li>
+                <li><i class="jhbTwo"></i><span>上海天钥桥路325号</span><a class="jhbMap" href="#5F"></a></li>
+                <li><i class="jhbThree"></i><span>400-668-5881 </span><label>或</label><a class="jhbOrder" id="JH0006">在线预约</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="roomType">
+    <a name="5F"></a>
+  <i class="rtTitle"></i>
+  <div class="rtName">房型</div>
+  <div class="rtMes">
+      <div class="swiper-container">
+          <div class="swiper-wrapper" style="width: 1160px;margin: 0px auto;">
+              <div class="swiper-slide">
+                  <dl>
+                      <dd>
+                          <a>
+                              <img src="img/gjswf.png">
+                              <div class="blMes">
+                                  <span>高级商务房</span>
+                                  <span>63平米</span>
+                                  <span>27套</span>
+                              </div>
+                          </a>
+                          <div class="blBtn"><label id="JH0001">在线预约</label></div>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="swiper-slide">
+                  <dl>
+                      <dd>
+                          <a>
+                              <img src="img/jtqzf.png">
+                              <div class="blMes">
+                                  <span>家庭亲子房</span>
+                                  <span>63平米</span>
+                                  <span>42套</span>
+                              </div>
+                          </a>
+                          <div class="blBtn"><label id="JH0002">在线预约</label></div>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="swiper-slide">
+                  <dl>
+                      <dd>
+                          <a>
+                              <img src="img/tmlyf.png">
+                              <div class="blMes">
+                                  <span>甜梦零压房</span>
+                                  <span>63平米</span>
+                                  <span>18套</span>
+                              </div>
+                          </a>
+                          <div class="blBtn"><label id="JH0003">在线预约</label></div>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="swiper-slide">
+                  <dl>
+                      <dd>
+                          <a>
+                              <img src="img/xzgyf.png">
+                              <div class="blMes">
+                                  <span>行政公寓房</span>
+                                  <span>63平米</span>
+                                  <span>33套</span>
+                              </div>
+                          </a>
+                          <div class="blBtn"><label id="JH0004">在线预约</label></div>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="swiper-slide">
+                  <dl>
+                      <dd>
+                          <a>
+                              <img src="img/xztf.png">
+                              <div class="blMes">
+                                  <span>行政套房</span>
+                                  <span>93平米</span>
+                                  <span>7套</span>
+                              </div>
+                          </a>
+                          <div class="blBtn"><label id="JH0005">在线预约</label></div>
+                      </dd>
+                  </dl>
+              </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+  </div>
+</div>
+<div class="roomType">
+    <i class="rtTitle"></i>
+    <div class="rtName">设施及服务</div>
+    <div class="feature">
+        <div>特色服务</div>
+        <dl>
+            <dd>
+                <img src="img/jhTcc.png">
+                <span>免费停车</span>
+            </dd>
+            <dd>
+                <img src="img/jhQth.png">
+                <span>全天候安保</span>
+            </dd>
+            <dd>
+                <img src="img/jhKf.png">
+                <span>咖啡厅</span>
+            </dd>
+            <dd>
+                <img src="img/jhZc.png">
+                <span>中西式自主早餐</span>
+            </dd>
+            <dd>
+                <img src="img/jhJs.png">
+                <span>健身会所</span>
+            </dd>
+        </dl>
+    </div>
+    <div class="garden">
+        <div>基础家居</div>
+        <dl>
+            <dd>
+                <img src="img/ds.png">
+                <span>电视</span>
+            </dd>
+            <dd>
+                <img src="img/bx.png">
+                <span>冰箱</span>
+            </dd>
+            <dd>
+                <img src="img/xy.png">
+                <span>洗衣</span>
+            </dd>
+            <dd>
+                <img src="img/wifi.png">
+                <span>WiFi网络</span>
+            </dd>
+            <dd>
+                <img src="img/kt.png">
+                <span>空调</span>
+            </dd>
+            <dd>
+                <img src="img/nq.png">
+                <span>暖气</span>
+            </dd>
+            <dd>
+                <img src="img/dsh.png">
+                <span>电暖水壶</span>
+            </dd>
+            <dd>
+                <img src="img/cfj.png">
+                <span>电吹风</span>
+            </dd>
+        </dl>
+        <dl class="allMes disHide">
+            <dd>
+                <img src="img/lyj.png">
+                <span>晾衣架</span>
+            </dd>
+            <dd>
+                <img src="img/tx.png">
+                <span>拖鞋</span>
+            </dd>
+            <dd>
+                <img src="img/cfyj.png">
+                <span>全套厨房家具</span>
+            </dd>
+        </dl>
+        <div class="mart40 allMes disHide">基础卫浴</div>
+        <dl class="allMes disHide">
+            <dd>
+                <img src="img/rs.png">
+                <span>全天热水</span>
+            </dd>
+            <dd>
+                <img src="img/wy.png">
+                <span>独立卫浴</span>
+            </dd>
+            <dd>
+                <img src="img/mj.png">
+                <span>毛巾</span>
+            </dd>
+            <dd>
+                <img src="img/yj.png">
+                <span>浴巾</span>
+            </dd>
+            <dd>
+                <img src="img/yyj.png">
+                <span>牙具</span>
+            </dd>
+            <dd>
+                <img src="img/xz.png">
+                <span>香皂</span>
+            </dd>
+            <dd>
+                <img src="img/xfs.png">
+                <span>洗发水</span>
+            </dd>
+            <dd>
+                <img src="img/wsz.png">
+                <span>卫生纸</span>
+            </dd>
+        </dl>
+        <div class="clickBtn clickAll"><a>查看全部</a><i class="cbIco"></i></div>
+        <div class="clickBtn clickNo disHide"><a>收起</a><i class="cbIcos"></i></div>
+    </div>
+</div>
+<div class="roomType">
+    <i class="rtTitle"></i>
+    <div class="rtName" id="5F">地理位置</div>
+    <ul class="mapNav">
+        <li class="mapActive">生活</li>
+        <li>购物</li>
+        <li>医疗</li>
+    </ul>
+    <div class="hjhPlace">
+        <div id="container"></div>
+    </div>
+</div>
+<div class="roomType">
+    <i class="rtTitle"></i>
+    <div class="rtName">品牌服务宗旨</div>
+    <div class="brand">
+        <img src="img/brand.png">
+        <div class="jhLogin">
+            <span>源涞</span>
+            <span>国际</span>
+        </div>
+        <div class="brandRight">
+            <p>自2013年创办开始，始终肩负“让租住成为一种生活方式”的经营使命。通过精心为客人营造轻松舒适的家庭氛围，引领大住宿行业变革。</p>
+            <p>办业至今，源涞国际已成功收获包括中国饭店协会“2016-2017年度中国最佳服务式公寓运营商”、金砖价值榜“2017年度中国最佳服务式公寓运营商”、全联房地产商会酒店投资商会“2016-2017年度最佳酒店式公寓运营商”等多项行业大奖。</p>
+            <p>源涞国际的公寓设计风格独具匠心，将高贵与简约完美融合。提供个性化服务，更贴合客户多样化需求。短租（1-5个月）、长租（6个月及以上）灵活搭配，让客户的居家与商旅全程无忧。上海CBD及热门景点多样优质房源，为客户提供交通便捷，舒适的居住环境。</p>
+        </div>
+    </div>
+</div>
+<div class="orderGood disHide">
+    <i class="ogIco"></i>
+    <span>您的预约已提交成功</span>
+    <span>我们会尽快安排您看房</span>
+</div>
+<!-- 中间内容结束 -->
+<div class="mask disHide"></div>
+
+<div class="exchange">
+    <i class="indexPhone"></i>
+    <div class="phoneMes">
+        <span>400-668-5881</span>
+        <span>客服热线   每天9:00-21:00</span>
+    </div>
+    <i class="indexWechat"></i>
+    <div class="wechatPop">
+        <div>关注“源涞月租房”服务号 </div>
+        <img src="img/ewmPop.png">
+        <ul>
+            <li><i></i><span>查房源</span></li>
+            <li><i></i><span>预订服务</span></li>
+            <li><i></i><span>更多优惠</span></li>
+        </ul>
+    </div>
+    <i class="indexEmail"></i>
+    <div class="emailMes">
+        <span>yl@yoland.com</span>
+        <span>发送客服邮件，开始深度咨询</span>
+    </div>
+    <i class="indexTop"></i>
+</div>
+<div class="footer">
+    <div class="fCenter">
+        <div class="ftTop">
+            <div class="ftLeft">
+                <dl>
+                    <dd><a href="aboutMe.html">关于源涞</a></dd>
+                    <dt>/</dt>
+                    <dd><a href="teamIndex.html">源涞团队</a></dd>
+                    <dt>/</dt>
+                    <dd><a href="privacy.html">隐私条款</a></dd>
+                </dl>
+                <div class="fDetail">
+                    <p>公寓设计风格独具匠心，将高贵与简约完美融合。提供个性化服务，更贴合客户多样化需求</p>
+                    <p>短租（1-6个月）、长租（6个月以上）灵活搭配，让客户的居家与商旅全程无忧</p>
+                    <p>上海CBD及热门景点多样优质房源，为客户提供交通便捷，舒适的居住环境。在线看房、预定房源、在线支付及预约服务等一键完成</p>
+                    <p class="pStyle">全球订房热线：（周一至周日9:00-17:30）</p>
+                    <label>400 - 668 - 5881</label>
+                </div>
+            </div>
+            <img class="footerEwm" src="img/footerEwm.png">
+        </div>
+        <div class="ftBottom">
+            <!--<div class="fbLeft">
+              <p>热门楼盘小区： 林荫湖畔    世纪花园    莱诗邸    汇金广场    仁恒河滨花园</p>
+              <p>瑞仕花园    翠湖天地    香梅花园    御景园    城宁花苑</p>
+            </div>-->
+            <div class="fbRight">
+                <p>© Copyright 2013 -2018 www.yoland.com All Rights Reserved. 源涞国际 沪IPC备15000127号-3</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/index.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wQZWbLQbKI22QsrKDjnCh5ZGkieqeuVd"></script>
+<script type="text/javascript">
+    $(function() {
+        /*埋点开始*/
+        var eventnumberData="11201"
+        function GetQueryString(name) { //获取渠道
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r!=null) return (decodeURIComponent(r[2])); return null;
+        }
+        var channelnameData=GetQueryString("channelname") //渠道号
+        console.log("aaa",channelnameData)
+        if(!(channelnameData)){
+            console.log("无渠道号")
+            channelnameData= localStorage.getItem("channelnameLos");
+        }else{
+            console.log("有渠道号")
+            localStorage.setItem("channelnameLos",channelnameData);
+        }
+        console.log("bb",channelnameData)
+        //页面来源
+        var sourcepageData=document.referrer
+        console.log("页面来源",sourcepageData)
+        //房源id
+        var houseidData="jyYlgj";
+        /*设备*/
+        var machinetypeData="pc"
+        console.log("设备",machinetypeData)
+        //来源
+        var sourceData="website_source_1"
+        console.log("来源",sourceData)
+        //唯一标识
+        var customeridData=localStorage.getItem("customeridLos")
+        if(!(customeridData)){
+            customeridData="";
+        }else{
+            customeridData=localStorage.getItem("customeridLos")
+        }
+        buriedPoint(eventnumberData,channelnameData,sourcepageData,houseidData,machinetypeData,sourceData,customeridData);
+        /*埋点结束*/
+
+
+        var mp = new BMap.Map('container')
+
+        /*轮播开始*/
+        var mySwiper = new Swiper('.swiper-container',{
+            loop: true,
+            slidesPerView: 'auto',
+        })
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 'auto',
+            autoplay: {
+                 disableOnInteraction: true,
+                 delay: 3000, //3秒切换一次
+             },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        /*轮播结束*/
+        //地图开始
+        var houseList = null
+        var jingwei = []
+        $.ajax({
+            //url:httpHead+"/map/ylgjGyMapInfo",
+            url:testHttp+"/map/ylgjGyMapInfo",
+            type:"GET",
+            data:{
+                "styleHotel":"jyYlgj"
+            },
+            success:function(data){ //对数据data处理，输出到html页面
+                if(data.code ==='000000'){
+                    var placeNum=data.data.location.position
+                    var lifeNum=data.data
+                    mp.centerAndZoom(new BMap.Point(placeNum[1], placeNum[0]), 15)
+                    mp.enableScrollWheelZoom(true)
+                    centerPlace(placeNum[1], placeNum[0]);
+                    houseList = lifeNum
+                    jingwei = placeNum
+                    likeLife(lifeNum, 'restaurant', "img/lifeIco.png")
+                }
+            }
+        })
+
+        function centerPlace(jing, wei) {
+            var myIcon1 = new BMap.Icon("img/currentHover.png", new BMap.Size(80,60));
+            var marker2 = new BMap.Marker(new BMap.Point(jing, wei), {icon: myIcon1});  // 创建标注
+            mp.addOverlay(marker2); // 将标注添加到地图中
+        }
+
+        //添加覆盖物
+        function likeLife(obj, fen, imgSrc){
+            var myIcon1 = new BMap.Icon(imgSrc, new BMap.Size(30,30));
+            for (var i in obj) {
+                if(i === fen){
+                    for(var j = 0; j < obj[fen].length; j++){
+                        var pos = obj[fen][j]['position']
+                        var tit = obj[fen][j]['title']
+
+                        var markerLife = new BMap.Marker(new BMap.Point(pos[1], pos[0]), {icon: myIcon1});  // 创建标注
+                        mp.addOverlay(markerLife); // 将标注添加到地图中
+                        var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(pos[1], pos[0]), tit);
+                        (function(b, imgSrc){
+                            var oImgSrc = null;
+                            markerLife.addEventListener('mouseover', function () {
+                                oImgSrc = $(this.Ac).find('img').eq(0).attr('src')
+                                $(this.Ac).find('img').eq(0).attr('src', imgSrc.split('.')[0] + "H." + imgSrc.split('.')[1])
+                                mp.addOverlay(b);
+                            })
+                            markerLife.addEventListener('mouseout', function () {
+                                $(this.Ac).find('img').eq(0).attr('src', oImgSrc)
+                                mp.removeOverlay(b)
+                            })
+                        }(myCompOverlay, imgSrc))
+                    }
+                }
+            }
+        }
+        //地图切换
+        function Handover(lifeNum){
+            mp.clearOverlays()
+            if($(".mapActive").text()=="购物"){
+                likeLife(lifeNum, 'supermarket', "img/shoppingIco.png");
+            }else if($(".mapActive").text()=="生活"){
+                likeLife(lifeNum, 'restaurant', "img/lifeIco.png");
+            }else if($(".mapActive").text()=="医疗"){
+                likeLife(lifeNum, 'hospital', "img/medicalIco.png");
+            }
+            centerPlace(jingwei[1], jingwei[0])
+        }
+        $(".mapNav li").on("click",function(){
+            $(".mapNav li").removeClass("mapActive")
+            $(this).addClass("mapActive")
+            Handover(houseList)
+        })
+        // 复杂的自定义覆盖物
+        function ComplexCustomOverlay(point, tit){
+            this._point = point;
+            this._tit = tit;
+            this.flag = true
+            this.fixLeft = 0
+        }
+        ComplexCustomOverlay.prototype = new BMap.Overlay();
+        ComplexCustomOverlay.prototype.initialize = function(map){
+            this._map = map;
+            var div = this._div = document.createElement("div");
+            div.style.whiteSpace = 'nowrap'
+            div.innerHTML = "<h2 class='layerModule'>"+ this._tit +"</h2>"
+            div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+            div.style.position = 'absolute'
+            // 样式
+            var that = this;
+            // 小三角样式 start
+            var arrow = this._arrow = document.createElement("div");
+            arrow.style.background = "url(img/label.png)";
+            arrow.style.position = "absolute";
+            arrow.style.width = "10px";
+            arrow.style.height = "5px";
+            arrow.style.top = "15px";
+            arrow.style.left = "50%";
+            arrow.style.marginLeft = "-5px";
+            arrow.style.overflow = "hidden";
+            // 小三角样式 end
+            div.appendChild(arrow);
+            mp.getPanes().labelPane.appendChild(div);
+            var W = -parseInt(div.getElementsByClassName('layerModule')[0].offsetWidth / 2)
+            this.fixLeft = W
+            return div;
+        }
+        ComplexCustomOverlay.prototype.draw = function () {
+            var map = this._map;
+            var pixel = map.pointToOverlayPixel(this._point);
+            this._div.style.left = pixel.x - 0 + "px";
+            this._div.style.top  = pixel.y - 40 + "px";
+            var oSpan = this._div.getElementsByClassName('layerModule')[0]
+
+            oSpan.style.position = "absolute"
+            oSpan.style.top =-25+'px'
+            oSpan.style.left = this.fixLeft + 'px'
+        }
+
+        //接口开始
+        //预约看房获取短信验证码接口
+        $(".clickCode").on("click",function(){
+            var phoneTxt = $(".phoneTxt").val();
+            var validCodeTxt = $(".validCodeTxt").val();
+            if(!phoneTxt){
+                $(".codeHint span").html("请输入手机号码")
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+                return false
+            }else if(!(/^1[34578]\d{9}$/.test(phoneTxt))){
+                $(".codeHint span").html("请输入正确的手机号码")
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+                return false
+            }else if(!validCodeTxt){
+                $(".codeHint span").html("请输入图形验证码");
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+                return false
+            }else{
+
+                $.ajax({
+                    /*url:yyHead+"/orderseehouse/sendAuthenticationCode", //验证码接口*/
+                    url:testHttp+"/orderseehouse/sendAuthenticationCode", //验证码接口
+                    type:"GET",
+                    dataType:"jsonp",
+                    data:{
+                        "phone":phoneTxt,
+                        "code": validCodeTxt
+                    },
+                    // 允许携带证书
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    // 允许跨域
+                    crossDomain: true,
+                    success:function(data){ //对数据data处理，输出到html页面
+                        if(data.code =="000000" ){
+                            settime(document.getElementById("btnSendCode"))
+                        } else if(data.code == "222222"){
+                            var codeMes=data.result.name
+                            $(".codeHint span").html(codeMes)
+                            $(".codeHint").show();
+                            setTimeout(function () {
+                                $(".codeHint").hide();
+                            }, 5000);
+                        }
+                    }
+                })
+            }
+        })
+        setTimeout(function () {
+            $(".codeHints").hide();
+            $(".codeHint").hide();
+        }, 5000);
+        //提交接口
+        //看房预约接口
+        var _houseid;
+        $(".blBtn label").on("click",function(){
+            _houseid = $(this).attr("id")
+            //alert(_houseid)
+            $(".orderPop").removeClass("disHide")
+            $('.mask').removeClass("disHide")
+        })
+        $(".jhbOrder").on("click",function () {
+            _houseid = $(this).attr("id")
+            // alert(_houseid)
+            $(".orderPop").removeClass("disHide")
+            $('.mask').removeClass("disHide")
+        })
+        $(".subBtn").on("click",function(){
+            var _phoneTxt=$(".phoneTxt").val();
+            var _codeTXt =$(".codeTxt").val();
+            var sex=$(".radioIcos").siblings("label").html()
+            var _nameTxt =$(".nameTxt").val();
+            if(sex ==="先生"){
+                var _sexTxt="man"
+            }else if(sex ==="女士"){
+                var _sexTxt="woman"
+            }if(!_phoneTxt){
+                $(".codeHint span").html("请输入手机号码")
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+                return false
+            }else if(!(/^1[34578]\d{9}$/.test(_phoneTxt))){
+                $(".codeHint span").html("请输入正确的手机号码")
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+                return false
+            }else if(!_codeTXt){
+                $(".codeHint span").html("请输入验证码")
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+            }else if(!_nameTxt){
+                $(".codeHint span").html("请输入您的姓名")
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+            }else{
+                subOrder()
+            }
+            function subOrder(){
+               var channelnameData= localStorage.getItem("channelnameLos");
+                var _data={
+                    "phone":_phoneTxt,
+                    "username": _nameTxt,
+                    "sex": _sexTxt,
+                    "houseid":_houseid,
+                    "source":"website_source_1",
+                    "verificationCode":_codeTXt,
+                    "channelname":channelnameData
+                }
+                $.ajax({
+                    //url:yyHead+"/orderseehouse/apartmentadd",
+                    url:testHttp+"/orderseehouse/apartmentadd",
+                    type:"POST",
+                    headers:{"Content-Type":"application/json;charset=UTF-8"},
+                    data:JSON.stringify(_data),
+                    success:function(data){ //对数据data处理，输出到html页面
+                        if(data.code =="000000" ){
+                            $(".orderList").hide();
+                            $(".subMes").show();
+                            setTimeout(function () {
+                                $(".orderPop").hide();
+                                $(".mask").hide();
+                            }, 5000);
+                        }else{
+                            var errorHint=data.result.name
+                            $(".codeHint").show();
+                            $(".codeHint span").html(errorHint)
+                            setTimeout(function () {
+                                $(".codeHint").hide();
+                            }, 5000);
+                        }
+                    }
+                })
+            }
+        })
+
+    })
+    //倒计时方法
+    var countdown=60;
+    function settime(val) {
+        $(".clickCode").addClass("bor");
+        if (countdown == 0) {
+            val.removeAttribute("disabled");
+            val.value = "获取验证码";
+            countdown = 60;
+            return false;
+        } else {
+            val.setAttribute("disabled", true);
+            val.value = "重新发送(" + countdown + ")";
+            countdown--;
+        }
+        setTimeout(function () {
+            settime(val);
+        }, 1000);
+    }
+    ///////////// 图形验证码 ///////
+    changeImg();
+    // 刷新图片
+    function changeImg() {
+        var imgSrc = $("#imgObj");
+        var src = testHttp+"/indexpc/validateCode";
+        imgSrc.attr("src", changeUrl(src));
+    }
+    //为了使每次生成图片不一致，即不让浏览器读缓存，所以需要加上时间戳
+    function changeUrl(url) {
+        var timestamp = (new Date()).valueOf();
+        var index = url.indexOf("?",url);
+        if (index > 0) {
+            url = url.substring(index, url.indexOf(url, "?"));
+        }
+        if ((url.indexOf("&") >= 0)) {
+            url = url + "×tamp=" + timestamp;
+        } else {
+            url = url + "?timestamp=" + timestamp;
+        }
+        return url;
+    }
+</script>
+</body>
+</html>

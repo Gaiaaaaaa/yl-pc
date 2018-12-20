@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酒店式公寓</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/newYearActive.css">
+    <link rel="stylesheet" type="text/css" href="css/dialog.css">
+</head>
+<body>
+    <!-- 头部banner -->
+    <div class="header">
+        <div class="banner">
+            <i class="header-login" id="login"></i>
+        </div>
+    </div>
+    <div class="xiangyun">
+        <i class="xiangyun-left"></i>
+        <i  class="xiangyun-right"></i>
+    </div>
+    <!-- 活动规则 -->
+    <div class="activityRule">
+            <i class="activityRule-png"></i>
+    </div> 
+
+    <!-- main -->
+    <div class="main">
+        <i class="zuoyuan"></i>
+        <i class="youyuan"></i>
+            <div class="margin-content marginZ">
+                    <div class="margin-content_font">
+                        <ul>
+                            <li><span class="title">参与方式</span><span class="title-item">在本活动页面提交联系方式&nbsp;(将作为认定客户身份的唯一凭证)</span></li>
+                            <li><span class="title">活动时间</span><span class="title-item">即日起至2019年1月31日</span></li>
+                            <li><span class="title">活动对象</span><span class="title-item">仅限在上海地区租房直客</span></li>
+                            <li><span class="title">活动说明</span><span class="title-item">免费租住相对应时间即签约租期,&nbsp;即可获取免费住7-30天资格</span></li>
+
+                            <li><span class="title-item title-privilege"><span class="circle">1</span>满3个月,&nbsp;&nbsp;</span><span class="reduction-time">免&nbsp;7&nbsp;天</span><span class="title-item">房租</span></li>
+                            <li><span class="title-item title-privilege"><span class="circle">2</span>满6个月,&nbsp;&nbsp;</span><span class="reduction-time">免15天</span><span class="title-item">房租</span></li>
+                            <li><span class="title-item title-privilege"><span class="circle">3</span>满1整年,&nbsp;&nbsp;</span><span class="reduction-time">免1个月</span><span class="title-item">房租</span></li>
+
+                            <li><span class="title">注意事项</span><span class="title-item">合同签约时,&nbsp;需提供参与活动的手机号与姓名给源涞销售,&nbsp;成功匹配</span></li>
+                            <li><span class="title-item title-privilege">报名,&nbsp;即可享受免费住活动</span></li>
+                        </ul>
+                    </div>
+
+                        <!-- 用户信息采集 -->
+                    <div class="form-box clearfix">
+                            <div class="username-box">
+                                <span class="name">姓名</span>
+                                <input type="text" class="name-ipt" id="name">
+                            </div>
+                            
+                            <div class="username-contact">
+                                <span class="contact name">联系方式</span>
+                                <input type="text" class="contact-ipt name-ipt">
+                            </div>
+                            
+                            <span class="lixiangmianzu">立享免租</span>
+                    
+                     </div>
+            </div>
+        
+                      <!-- 活动说明 -->
+        <div class="activityDes marginZ">
+                <h2 class="activityDes-pic marginZ"></h2>
+        </div>
+        
+
+        <!-- 活动说明-->
+        <div class="activityDes-box marginZ">
+            <i class="zuoxiangyun"></i>
+            <i class="youxiangyun"></i>
+            <div class="activityDes-contnet marginZ">
+                <ul>
+                    <li><span class="xuliehao">1</span><span>此活动不对现有租赁合同客户开放，不能与其他促销活动、合作伙伴优惠</span></li>
+                    <li class="pad-let47">同享，不适用于第三方网站、企业和促销价格</li>
+                    <li><span class="xuliehao">2</span><span>合同期限要求:&nbsp;&nbsp;签署租约超过90天。</span></li>
+                    <li><span class="xuliehao">3</span><span>由于租客个人原因办理任意形式提前退租,&nbsp;及其他因不可抗力导致合同提前</span></li>
+                    <li class="pad-let47 mb-47">终止的情况,&nbsp;将不享受免费住时长。</li>
+                    <li class="pad-let47 interpretation">源涞国际保留更改这些条件和条款的权利，最终解释权归源涞国际所有</li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- 底部雲彩 -->
+    <div class="bottom-yuncai">
+        <div class="yun">
+            <div class="yun-container_font">
+                <p>© Copyright 2013 -2018 www.yoland.com All Rights Reserved. 上海源涞实业有限公司</p>
+                <p>IPC备案：沪ICP备15000127号-2</p>
+            </div>
+        </div>
+    </div>
+        
+    </div>       
+</body>
+<script src="./js/jquery-1.7.2.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    $(function(){
+
+        //点击获取焦点
+        $('#login').on('click',function(){
+            $('#name').focus()
+        })
+
+        
+    })
+</script>
+</html>

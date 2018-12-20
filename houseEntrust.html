@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>房源委托</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/other.css">
+</head>
+<body>
+<div class="header">
+    <img class="hLogin" src="img/hLogin.png" alt="上海服务式公寓">
+    <ul class="hNav">
+        <li><a href="index.html">首 页</a></li>
+        <li><a href="houseLists.html" target="_blank">服务公寓</a></li>
+        <li><a href="hotelList.html" target="_blank">酒店公寓</a></li>
+        <li><a class="navActive" href="houseEntrust.html" target="_blank">房源委托</a></li>
+    </ul>
+    <div class="mouseEwm">
+     <span class="hEwm">
+     <img src="img/ewmIco.png" alt="上海酒店式公寓">
+    </span>
+        <div class="ewmPop">
+            <div>关注“源涞月租房”服务号 </div>
+            <img src="img/ewmPop.png" alt="上海长租公寓">
+            <ul>
+                <li><i></i><span>查房源</span></li>
+                <li><i></i><span>预订服务</span></li>
+                <li><i></i><span>更多优惠</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mouseLang">
+        <!--<span class="hLanguage"><label>language</label><i></i></span>-->
+        <!--<div class="languePop">
+            <ul>
+                <li class="labgActive">简体中文</li>
+                <li>English</li>
+            </ul>
+        </div>-->
+    </div>
+</div>
+<!-- 中间内容开始 -->
+<div class="heBanner">
+    <div class="hebCenter">
+        <div class="hebMes">
+            <div class="divName">房东委托<label>（上海）</label></div>
+            <div class="dateModule">
+                <dl>
+                    <dd><i class="nameIco"></i><span><input type="text" class="nameTxt" value="" placeholder="姓名"></span> </dd>
+                    <dd><i class="plotIco"></i><span><input type="text" class="plotTxt" value="" placeholder="小区名"></span> </dd>
+                    <dd>
+                        <i class="houseIco"></i>
+                        <span class="clickHouse"><p class="htTxt">房型</p><b></b></span>
+                        <ul class="disHide heHouse">
+                           <!-- <li>一室</li>
+                            <li>二室</li>
+                            <li>三室</li>
+                            <li>三室以上</li>-->
+                        </ul>
+                    </dd>
+                    <dd><i class="rentIco"></i><span><input type="text" class="moneyTxt" value="" placeholder="意向租金"><label>元/月</label></span></dd>
+                    <dd><i class="phoneIco"></i><span><input type="number" class="phoneTxt" value="" placeholder="手机号"></span></dd>
+                    <dt>
+                        <i class="codeIco"></i>
+                        <span class="verification">
+                        <input type="text" class="validCodeTxt" value="" placeholder="图形验证码">
+                        <img id="imgObj" class="validCodeImg" alt="图形验证码" src="" onclick="changeImg()"/>
+                        <!-- <a href="javascript:void(null);" onclick="changeImg()">换一张</a> -->
+                        </span>
+                    </dt>
+                    <dt><i class="codeIco"></i><span><input type="text" class="codeTxt" value="" placeholder="验证码"><!--<a>获取验证码</a>-->
+                    <input type="button" id="btnSendCode" class="clickCode obtain generate_code acode" value="发送验证码">
+                    </span> </dt>
+                </dl>
+                <div class="balnk20">
+                    <div class="codeHint"><i></i><span></span></div>
+                </div>
+                <a class="submitBtn">提交委托</a>
+            </div>
+            <div class="subMes">
+                <i></i>
+                <span>您的预约已提交成功</span>
+                <span>我们会尽快安排您看房</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="houseEbg"></div>
+    <div class="houseeType">
+        <i class="rtTitle"></i>
+        <div class="rtName fw10">公司优势</div>
+        <div class="company">
+            <ul class="comAdv">
+                <li>
+                    <span>7YEARS</span>
+                    <span>中高端房屋管理经验</span>
+                </li>
+                <li>
+                    <span>4000+</span>
+                    <span>外籍人员管理经验</span>
+                </li>
+                <li>
+                    <span>5★</span>
+                    <span>酒店管理行业</span>
+                </li>
+                <li>
+                    <span>250000㎡</span>
+                    <span>房屋管理面积</span>
+                </li>
+                <li>
+                    <span>200+</span>
+                    <span>专业售后服务团队</span>
+                </li>
+                <li>
+                    <span>30%↑<i></i></span>
+                    <span>业主月租金提升</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="houseeType patt50">
+        <i class="rtTitle"></i>
+        <div class="rtName">选择源涞的四大理由</div>
+        <ul class="reasonMes">
+            <li><img src="img/rmOne.png" alt="上海长租公寓"><span>房屋租金增值</span> </li>
+            <li><img src="img/rmTwo.png" alt="上海长租公寓"><span>租后无忧盈利</span> </li>
+            <li><img src="img/rmThree.png" alt="上海服务式公寓"><span>免费全套装修</span> </li>
+            <li><img src="img/rmFour.png" alt="上海服务式公寓"><span>退租依旧整洁</span> </li>
+        </ul>
+    </div>
+<div class="houseeType">
+    <i class="rtTitle"></i>
+    <div class="rtName">闲置房升值“源涞”如此简单</div>
+    <ul class="revalueName">
+        <li>项目</li>
+        <li>委托传统中介</li>
+        <li>委托源涞</li>
+    </ul>
+    <ul class="rnMes">
+        <li><span>佣金</span><span>一个月</span><span>无</span></li>
+        <li><span>空置期</span><span>两周～一个月</span><span>15天免租期</span></li>
+        <li><span>租客入住前保洁</span><span>1000元</span><span>免费</span></li>
+        <li><span>房屋日常维修</span><span>自理</span><span>无特殊情况全部免费</span></li>
+        <li><span>租客带看</span><span>自理</span><span>专业带看顾问</span></li>
+        <li><span>租客退租后保洁</span><span>自理</span><span>免费</span></li>
+        <li><span>催缴租金</span><span>自理</span><span>每月固定时间汇款到账</span></li>
+        <li><span>租客续租</span><span>自理</span><span>专人负责续租服务</span></li>
+        <li><span>租客退租</span><span>再次找租客付佣金</span><span>免费</span></li>
+    </ul>
+</div>
+<div class="entrust">
+    <div class="houseeType">
+        <i class="rtTitle"></i>
+        <div class="rtName">委托方案</div>
+        <ul class="entMes">
+            <li>
+                <img src="img/enOne.png" alt="外国人租房">
+                <div>包租服务</div>
+                <i></i>
+                <span>业主全程房屋托管</span>
+                <span>源涞提供管家式托管服务</span>
+                <span>无需担心房屋空置</span>
+                <span>收益稳定，任性甩手做房东</span>
+            </li>
+            <li>
+                <img src="img/enTwo.png" alt="源涞国际">
+                <div>托管服务</div>
+                <i></i>
+                <span>业主自行出租房屋</span>
+                <span>源涞为房屋和租客提供</span>
+                <span>专业的租后管理服务</span>
+                <span>房屋增值，坐享收益分成</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 中间内容结束 -->
+<div class="exchange">
+    <i class="indexPhone"></i>
+    <div class="phoneMes">
+        <span>400-668-5881</span>
+        <span>客服热线   每天9:00-21:00</span>
+    </div>
+    <i class="indexWechat"></i>
+    <div class="wechatPop">
+        <div>关注“源涞月租房”服务号 </div>
+        <img src="img/ewmPop.png" alt="上海服务式公寓">
+        <ul>
+            <li><i></i><span>查房源</span></li>
+            <li><i></i><span>预订服务</span></li>
+            <li><i></i><span>更多优惠</span></li>
+        </ul>
+    </div>
+    <i class="indexEmail"></i>
+    <div class="emailMes">
+        <span>yl@yoland.com</span>
+        <span>发送客服邮件，开始深度咨询</span>
+    </div>
+    <i class="indexTop"></i>
+</div>
+<div class="footer mart0">
+    <div class="fCenter">
+        <div class="ftTop">
+            <div class="ftLeft">
+                <dl>
+                    <dd><a href="aboutMe.html">关于源涞</a></dd>
+                    <dt>/</dt>
+                    <dd><a href="teamIndex.html">源涞团队</a></dd>
+                    <dt>/</dt>
+                    <dd><a href="privacy.html">隐私条款</a></dd>
+                </dl>
+                <div class="fDetail">
+                    <p>公寓设计风格独具匠心，将高贵与简约完美融合。提供个性化服务，更贴合客户多样化需求</p>
+                    <p>短租（1-6个月）、长租（6个月以上）灵活搭配，让客户的居家与商旅全程无忧</p>
+                    <p>上海CBD及热门景点多样优质房源，为客户提供交通便捷，舒适的居住环境。在线看房、预定房源、在线支付及预约服务等一键完成</p>
+                    <p class="pStyle">全球订房热线：（周一至周日9:00-17:30）</p>
+                    <label>400 - 668 - 5881</label>
+                </div>
+            </div>
+            <img class="footerEwm" src="img/footerEwm.png" alt="外国人租房"> 
+        </div>
+        <div class="ftBottom">
+            <!--<div class="fbLeft">
+              <p>热门楼盘小区： 林荫湖畔    世纪花园    莱诗邸    汇金广场    仁恒河滨花园</p>
+              <p>瑞仕花园    翠湖天地    香梅花园    御景园    城宁花苑</p>
+            </div>-->
+            <div class="fbRight">
+                <p>© Copyright 2013 -2018 www.yoland.com All Rights Reserved. 源涞国际 沪IPC备15000127号-3</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(function(){
+    
+        /*埋点开始*/
+        var eventnumberData="12501"
+        function GetQueryString(name) { //获取渠道
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r!=null) return (decodeURIComponent(r[2])); return null;
+        }
+        var channelnameData=GetQueryString("channelname") //渠道号
+        console.log("aaa",channelnameData)
+        if(!(channelnameData)){
+            console.log("无渠道号")
+            channelnameData= localStorage.getItem("channelnameLos");
+        }else{
+            console.log("有渠道号")
+            localStorage.setItem("channelnameLos",channelnameData);
+        }
+        console.log("bb",channelnameData)
+        //页面来源
+        var sourcepageData=document.referrer
+        console.log("页面来源",sourcepageData)
+        /*房源id*/
+        var houseidData = "";
+        console.log("房源id",houseidData)
+        /*设备*/
+        var machinetypeData="pc"
+        console.log("设备",machinetypeData)
+        //来源
+        var sourceData="website_source_1"
+        console.log("来源",sourceData)
+        //唯一标识
+        var customeridData=localStorage.getItem("customeridLos")
+        if(!(customeridData)){
+            customeridData="";
+        }else{
+            customeridData=localStorage.getItem("customeridLos")
+        }
+        buriedPoint(eventnumberData,channelnameData,sourcepageData,houseidData,machinetypeData,sourceData,customeridData);
+        /*埋点结束*/
+
+        //户型接口开始
+        var _houseLi="";
+        $.ajax({
+            //url:httpHead+"/indexpc/indexHouseType",
+            url:testHttp+"/indexpc/indexHouseType",
+            type:"GET",
+            success:function(data){ //对数据data处理，输出到html页面
+                if(data.code ==='000000'){
+                    var _houseData=data.data.houseType
+                    var _houseLength=data.data.houseType.length
+                    for (var h=0;h<_houseLength;h++){
+                        _houseLi+="<li areaName="+_houseData[h].typeBianma+" >"+_houseData[h].typeName+"</li>"
+                    }
+                    $('.heHouse').html(_houseLi)
+                }
+            }
+        })
+        //验证码接口获取
+        $(".acode").on("click",function(){
+            var phoneTxt = $(".phoneTxt").val();
+            var validCodeTxt = $(".validCodeTxt").val();
+            if(!phoneTxt){
+                $(".codeHint span").html("请输入手机号码")
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+                return false
+            }else if(!(/^1[34578]\d{9}$/.test(phoneTxt))){
+                $(".codeHint span").html("请输入正确的手机号码")
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+                return false
+            }else if(!validCodeTxt){
+                $(".codeHint span").html("请输入图形验证码");
+                $(".codeHint").show();
+                setTimeout(function () {
+                    $(".codeHint").hide();
+                }, 5000);
+                return false
+            }
+
+            $.ajax({
+                //url:yyHead+"/orderseehouse/sendAuthenticationCode", //验证码接口
+                url:testHttp+"/orderseehouse/sendAuthenticationCode", //验证码接口
+                type:"GET",
+                dataType:"jsonp",
+                data:{
+                    "phone":phoneTxt,
+                    "code": validCodeTxt
+                },
+                // 允许携带证书
+                xhrFields: {
+                    withCredentials: true
+                },
+                // 允许跨域
+                crossDomain: true,
+                success:function(data){ //对数据data处理，输出到html页面
+
+                    if(data.code =="000000" ){
+                        settime(document.getElementById("btnSendCode"))
+                    } else if(data.code == "222222"){
+                        var codeMes=data.result.name
+                        $(".codeHint span").html(codeMes)
+                        $(".codeHint").show();
+                        setTimeout(function () {
+                            $(".codeHint").hide();
+                        }, 5000);
+                    }
+                }
+            })
+        })
+        //提交委托接口
+        $(".submitBtn").on("click",function(){
+            var _nameTxt =$(".nameTxt").val();
+            var _plotTxt =$(".plotTxt").val();
+            var _htTxt =$(".htTxt").text();
+            var _moneyTxt =$(".moneyTxt").val();
+            var _phoneTxt =$(".phoneTxt").val();
+            var _codeTxt =$(".codeTxt").val();
+            if(!_nameTxt){
+             $(".codeHint").show();
+             $(".codeHint span").html("请输入姓名")
+            }else if(!_plotTxt){
+                $(".codeHint").show();
+                $(".codeHint span").html("请输入小区名")
+            }else if(!_htTxt || _htTxt=="房型"){
+                $(".codeHint").show();
+                $(".codeHint span").html("请选择房型")
+            }else if(!_moneyTxt){
+                $(".codeHint").show();
+                $(".codeHint span").html("请输入意向租金")
+            }else if(!_phoneTxt){
+                $(".codeHint").show();
+                $(".codeHint span").html("请输入手机号")
+            }else if(!(/^1[34578]\d{9}$/.test(_phoneTxt))){
+                $(".codeHint").show();
+                $(".codeHint span").html("请输入正确的手机号码")
+            }else if(!_codeTxt){
+                $(".codeHint").show();
+                $(".codeHint span").html("请输入验证码")
+            }else{
+                submitEntrust();
+            }
+            function submitEntrust(){
+                var channelnameData= localStorage.getItem("channelnameLos");
+                var _data={
+                    "city": "上海",
+                    "name": _nameTxt,
+                    "phone": _phoneTxt,
+                    "residentialQuarters":_plotTxt,
+                    "houseType":_htTxt,
+                    "intentionalRent":_moneyTxt,
+                    "source":"website_source_1",
+                    "verificationCode":_codeTxt,
+                     "channelname":channelnameData
+                }
+                $.ajax({
+                    //url:yyHead+"/delegate/delegateadd", //提交委托接口
+                    url:testHttp+"/delegate/delegateadd", //提交委托接口
+                    type:"POST",
+                    headers:{"Content-Type":"application/json;charset=UTF-8"},
+                    data:JSON.stringify(_data),
+                    success:function(data){ //对数据data处理，输出到html页面
+
+                        if(data.code =="000000" ){
+                            $(".dateModule").hide();
+                            $(".subMes").show();
+                        }else {
+                            $(".codeHint").show();
+                            var _errorHint=data.result.name
+                            $(".codeHint span").html(_errorHint)
+                        }
+                    }
+                })
+            }
+        })
+
+        setTimeout(function () {
+            $(".codeHints").hide();
+            $(".codeHint").hide();
+        }, 5000);
+    })
+    //倒计时方法
+    var countdown=60;
+    function settime(val) {
+        $(".clickCode").addClass("bor");
+        if (countdown == 0) {
+            val.removeAttribute("disabled");
+            val.value = "获取验证码";
+            countdown = 60;
+            return false;
+        } else {
+            val.setAttribute("disabled", true);
+            val.value = "重发(" + countdown + "s)";
+            countdown--;
+        }
+        setTimeout(function () {
+            settime(val);
+        }, 1000);
+    }
+    ///////////// 图形验证码 ///////
+    changeImg();
+    // 刷新图片
+    function changeImg() {
+        var imgSrc = $("#imgObj");
+        var src = testHttp+"/indexpc/validateCode";
+        imgSrc.attr("src", changeUrl(src));
+    }
+    //为了使每次生成图片不一致，即不让浏览器读缓存，所以需要加上时间戳
+    function changeUrl(url) {
+        var timestamp = (new Date()).valueOf();
+        var index = url.indexOf("?",url);
+        if (index > 0) {
+            url = url.substring(index, url.indexOf(url, "?"));
+        }
+        if ((url.indexOf("&") >= 0)) {
+            url = url + "×tamp=" + timestamp;
+        } else {
+            url = url + "?timestamp=" + timestamp;
+        }
+        return url;
+    }
+</script>
+</body>
+</html>
